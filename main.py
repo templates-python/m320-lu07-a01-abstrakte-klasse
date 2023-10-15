@@ -5,9 +5,8 @@ from cow import Cow
 
 if __name__ == "__main__":
     # Erzeuge ein "abstraktes" Tier. Wie soll sich das bewegen?
-    # Animal ist abstrakt deklariert und kann daher nicht instanziiert werden!
-    # animal = Animal("was genau?")
-    # animal.move()
+    animal = Animal("was genau?")
+    animal.move()
     # Erzeuge einen Vogel
     bird = Bird("Vogel", "Kudu")
     bird.move()
@@ -22,7 +21,7 @@ if __name__ == "__main__":
     print("\n\nDemo zu Polymorphie")
     # Alle Objekt in eine Liste (Sammlung) stecken.
     animals = []
-    # animals.append(animal)
+    animals.append(animal)
     animals.append(bird)
     animals.append(fish)
     animals.append(cow)
