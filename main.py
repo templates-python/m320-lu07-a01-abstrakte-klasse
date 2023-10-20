@@ -20,11 +20,7 @@ if __name__ == "__main__":
     # Eine kleine Demo was noch möglich ist.
     print("\n\nDemo zu Polymorphie")
     # Alle Objekt in eine Liste (Sammlung) stecken.
-    animals = []
-    animals.append(animal)
-    animals.append(bird)
-    animals.append(fish)
-    animals.append(cow)
+    animals = [animal, bird, fish, cow]
     # animals enthält verschiedene Objekte, die aber alle die Fähigkeit move() haben.
     # Jedes Objekt der konkreten Tiere erbt von Animal, ist somit auch vom Typ Animal.
     # Nun können alle Objekte mit der Sicht - der Brille - "Animal" betrachtet werden.

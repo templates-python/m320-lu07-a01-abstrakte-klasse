@@ -1,5 +1,6 @@
 from animal import Animal
 
+
 class Bird(Animal):
 
     def __init__(self, species, name):
@@ -7,4 +8,4 @@ class Bird(Animal):
         self.__name = name
 
     def move(self):
-        print(self._species + " mit Name " + self.__name + " fliegt")
+        print(f'{self._species} mit Name {self.__name} fliegt')
