@@ -8,4 +8,4 @@ class Cow(Animal):
         self.__name = name
 
     def move(self):
-        print(self._species + " mit Name " + self.__name + " läuft")
+        print(f'{self._species} mit Name {self.__name} läuft')
