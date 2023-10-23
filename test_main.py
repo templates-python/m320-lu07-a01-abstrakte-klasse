@@ -6,11 +6,13 @@ from fish import Fish
 
 class TestAnimals:
 
-    def test_animal(self, capsys):
-        animal = Animal('unknown')
-        animal.move()
-        captured = capsys.readouterr()
-        assert captured.out == 'Tier weiss nicht konkret, wie es sich bewegen soll\n'
+    def test_animal(self):
+        try:
+            animal = Animal('unknown')
+            animal.move()
+            assert False
+        except TypeError:
+            assert True
 
     def test_bird(self, capsys):
         animal = Bird('Vogel', 'Kudu')

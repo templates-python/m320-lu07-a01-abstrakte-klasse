@@ -4,4 +4,4 @@ class Animal():
         self._species = species
 
     def move(self):
-        pass
+        print('Tier weiss nicht konkret, wie es sich bewegen soll')
